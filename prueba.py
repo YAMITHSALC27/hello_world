@@ -9,8 +9,6 @@ print(type("hola")) # la funcion type me dice que tipo de dato es lo que esta en
 print(type(4))
 print(type(5.5))
 
-"""
-dnafninaiaondinadiniw
-anfnaanidninfaklfkl
-nafjanfdkwandiawlnd
-"""
+a=0
+a=1
+pi=3.14
