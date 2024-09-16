@@ -8,7 +8,4 @@ print("cachirrie")
 print(type("hola")) # la funcion type me dice que tipo de dato es lo que esta en los parentesis
 print(type(4))
 print(type(5.5))
-
-a=0
-a=1
-pi=3.14
+print("pruebagitignore")
