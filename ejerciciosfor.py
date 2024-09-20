@@ -80,4 +80,46 @@ def piramide():
         print(" "*(altura-i), end="")
         print("*"*(2*i-1))
 
-piramide()
+#piramide()
+
+def descubrir_contraseña():
+    contraseña = "123456"
+    contraseña_introducida = ""
+    intento_ingresado= int(input("porfavor ingrese un numero de intentos"))
+    intento = 1
+    while contraseña_introducida != contraseña:
+        contraseña_introducida = str(input("ingrese la contraseña: "))
+
+        if contraseña_introducida != contraseña:
+            print("Contraseña incorrecta. Inténtelo de nuevo.", intento, "/", intento_ingresado)
+        elif contraseña_introducida == contraseña:
+            print("Contraseña correcta.")
+        elif intento == intento_ingresado:
+            print("\33[101m"+"se ha superado el numero de intentos :( "+"\33[0m")
+            break
+descubrir_contraseña()
+
+def descubrir_contraseña():
+    contraseña = "123456"
+    intento_ingresado = int(input("Por favor, ingrese el número de intentos permitidos: "))
+    intento = 1
+    
+    while intento <= intento_ingresado:
+        contraseña_introducida = input("Ingrese la contraseña: ")
+        
+        if contraseña_introducida == contraseña:
+            print("Contraseña correcta.")
+            break
+        else:
+            print("Contraseña incorrecta. Inténtelo de nuevo.",intento,"/",intento_ingresado)
+        
+        intento += 1
+
+        if intento > intento_ingresado:
+            print("\33[101m" + "Se ha agotado el número de intentos." + "\33[0m")
+
+# Ejecutar la función
+#descubrir_contraseña()
+
+
+        
